@@ -14,20 +14,21 @@
 # limitations under the License.
 
 ## Inherit from the common tree
-include device/samsung/m31-common/BoardConfigCommon.mk
+include device/samsung/exynos9611-common/BoardConfigCommon.mk
 
 ## Inherit from the proprietary configuration
-include vendor/samsung/m31/BoardConfigVendor.mk
+include vendor/samsung/f41/BoardConfigVendor.mk
 
-DEVICE_PATH := device/samsung/m31
+DEVICE_PATH := device/samsung/f41
 
-TARGET_OTA_ASSERT_DEVICE := m31,m31dd,m31nsxx
+TARGET_OTA_ASSERT_DEVICE := f41,f41dd,f41nsxx
 
 ## APEX image
 DEXPREOPT_GENERATE_APEX_IMAGE := true
 
 ## Kernel Defconfig
-TARGET_KERNEL_CONFIG := exynos9611-m31_defconfig
+TARGET_KERNEL_CONFIG := 
+
 
 ## Manifest
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/device_manifest.xml
