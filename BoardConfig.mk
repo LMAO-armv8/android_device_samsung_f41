@@ -27,7 +27,7 @@ TARGET_OTA_ASSERT_DEVICE := f41,f41dd,f41nsxx
 DEXPREOPT_GENERATE_APEX_IMAGE := true
 
 ## Kernel Defconfig
-TARGET_KERNEL_CONFIG := 
+TARGET_KERNEL_CONFIG := exynos9610-f41dd_defconfig
 
 
 ## Manifest
